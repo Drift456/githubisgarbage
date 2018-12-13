@@ -1,17 +1,16 @@
-# Functions -------------------------
 from sense_hat import SenseHat
 sense = SenseHat()
 
-white = (255, 255, 255)
+blue = (0, 0, 255)
 
 bat_y = 4
 
 def draw_bat():
-    sense.set_pixel(0, bay_y, white)
+    sense.set_pixel(0, bat_y, blue)
+    sense.set_pixel(0, bat_y + 1, blue)
+    sense.set_pixel(0, bat_y - 1, blue)
     
-bat_y + 1
-bat_y - 1
+#main Function----------------
+draw_bat()
 
-# Main program ------------------------
-
-                
+move_up
